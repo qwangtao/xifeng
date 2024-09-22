@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content-wrapper {
+    display: flex;
+    margin-top: 60px; /* 为固定的header留出空间 */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    position: fixed;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+    margin-left: 250px;
+}
+
+#search {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#outline {
+    list-style-type: none;
+    padding: 0;
+}
+
+#outline ul {
+    padding-left: 1rem;
+}
+
+#outline a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

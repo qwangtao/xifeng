@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的摄影网站</title>
+    <link rel="stylesheet" href="basics.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#basics">基础知识</a></li>
+                <li><a href="#equipment">摄影器材</a></li>
+                <li><a href="#aesthetics">提升审美</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="layout">
+        <div class="sidebar">
+            <ul>
+                <li data-section="home">首页</li>
+                <li data-section="portfolio">作品集
+                    <ul>
+                        <li data-section="landscape">风景摄影</li>
+                        <li data-section="portrait">人像摄影</li>
+                        <li data-section="street">街拍</li>
+                    </ul>
+                </li>
+                <li data-section="about">关于我</li>
+                <li data-section="contact">联系方式</li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <!-- 内容将通过 JavaScript 动态加载 -->
+        </div>
+    </div>
+    <script src="basics.js"></script>
+</body>
+</html>
